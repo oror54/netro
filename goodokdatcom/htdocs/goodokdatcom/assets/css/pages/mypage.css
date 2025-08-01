@@ -1,0 +1,179 @@
+/* 마이페이지 */
+.mypage { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 40px; position: relative; } 
+
+/* Mypage - User Section */
+.mypage .user { width: 100%; margin-top: 40px; background-color: #f9f9f9; padding: 50px 0; border-bottom: 1px solid #eee; } 
+.mypage .user .column { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 30px; } 
+.mypage .user .column .between { width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; } 
+.mypage .user .column .between .name { display: flex; align-items: center; gap: 5px; } 
+.mypage .user .column .between .name h2 { font-size: 28px; font-weight: bold; } 
+.mypage .user .column .between .name p { font-size: 24px; font-weight: 500; margin-top: 4px; } 
+.mypage .user .column .between .buttons { display: flex; gap: 10px; } 
+.mypage .user .column .between .buttons .round-btn { background-color: #fff; border: 1px solid #ddd; border-radius: 30px; padding: 10px 20px; display: flex; align-items: center; gap: 5px; } 
+.mypage .user .column .between .buttons .round-btn p { font-size: 14px; color: #333; } 
+.mypage .user .column .between .buttons .round-btn i { font-size: 16px; color: #555; } 
+.mypage .user .card-wrap { width: 100%; display: flex; gap: 20px; } 
+.mypage .user .card-wrap .card { flex: 1; width: 100%; height: 157px; background: #3a573e; padding: 25px 30px; border-radius: 10px; } 
+.mypage .user .card-wrap .card .content { display: flex; flex-direction: column; align-items: stretch; justify-content: space-between; width: 100%; height: 100%; } 
+.mypage .user .card-wrap .card .content .title { margin-bottom: 10px; } 
+.mypage .user .card-wrap .card .content .title p { color: #fff; font-size: 16px; } 
+.mypage .user .card-wrap .card .content .inner { display: flex; justify-content: space-between; align-items: center; } 
+.mypage .user .card-wrap .card .content .inner .img { width: 32px; height: 32px; background-repeat: no-repeat; background-position: center; background-size: contain; } 
+.mypage .user .card-wrap .card .content .inner .img.coupon { background-image: url(/goodokdatcom/assets/images/icon/coupon-icon.svg); } 
+.mypage .user .card-wrap .card .content .inner .img.seed { background-image: url(/goodokdatcom/assets/images/icon/seed-icon.svg); } 
+.mypage .user .card-wrap .card .content .inner .number { display: flex; align-items: baseline; gap: 5px; color: #fff; } 
+.mypage .user .card-wrap .card .content .inner .number b { font-size: 32px; font-weight: bold; } 
+.mypage .user .card-wrap .card .content .inner .number p { font-size: 16px; } 
+
+/* Mypage - List Section */
+.mypage .mypage-list { padding: 50px 0; } 
+.mypage .mypage-list .list { margin-bottom: 50px; } 
+.mypage .mypage-list .list:last-child { margin-bottom: 0; } 
+.mypage .mypage-list .list .tit { display: flex; align-items: center; gap: 10px; padding-bottom: 15px; border-bottom: 2px solid #222; } 
+.mypage .mypage-list .list .tit img { width: 28px; } 
+.mypage .mypage-list .list .tit p { font-size: 20px; font-weight: bold; } 
+.mypage .mypage-list .list ul { padding-top: 10px; } 
+.mypage .mypage-list .list ul li { padding: 14px 0; border-bottom: 1px solid #eee; } 
+.mypage .mypage-list .list ul li:last-child { border-bottom: 0; } 
+.mypage .mypage-list .list ul li a { font-size: 16px; color: #555; font-weight: 500; } 
+
+/* Subscription List Styles */
+.mypage .mypage-list .list ul .sub-list { width: 100%; display: flex; flex-direction: column; padding: 0; border-bottom: 1px solid #eee; } 
+.mypage .mypage-list .list ul .sub-list .accordion { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; cursor: pointer; } 
+.mypage .mypage-list .list ul .sub-list .accordion a { color: #222; } 
+.mypage .mypage-list .list ul .sub-list .accordion i { font-size: 18px; font-weight: 600; color: #333; } 
+.mypage .mypage-list .list ul .sub-list .panel { display: none; } 
+.mypage .mypage-list .list ul .sub-list .panel .items-wrap { display: flex; } 
+.mypage .mypage-list .list ul .sub-list .panel .items-wrap .item { flex: 1; padding: 22px 0; font-size: 14px; color: #333; background-color: #fafafa; border-radius: 0; cursor: pointer; text-align: center; display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 5px; border-top: 1px solid #eee; } 
+.mypage .mypage-list .list ul .sub-list .panel .items-wrap .item + .item { border-left: 1px solid #eee; } 
+.mypage .mypage-list .list ul .sub-list .panel .items-wrap .item.act { color: #23b16c; border: 1px solid #23b16c; font-weight: 700; } 
+.mypage .logout { display: none; } 
+
+/* 마이페이지 선택후 myinfo */
+
+.mypage .myinfo { width: 100%; display: flex; flex-direction: row; justify-content: center; gap: 40px; padding: 40px 0 0 10px;align-items: stretch; } 
+.mypage .myinfo .wraper { margin: 0; } 
+.mypage .myinfo .side-navi { padding: 60px 0 40px; } 
+.mypage .myinfo .contain { width: 100%; height: 100%; display: flex; flex-direction: column; gap: 20px; } 
+.mypage .myinfo .contain .main-content { width: 100%; height: 100%; display: flex; flex-direction: column; gap: 40px; } 
+.mypage .myinfo .contain .main-content .title { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 2px solid #333; } 
+.payment-content{width: 100%; height: 100%;}
+.mypage .myinfo .contain .main-content .title .titl h3 { font-size: 28px; font-weight: 700; letter-spacing: -0.75px; line-height: 1; } 
+.mypage .myinfo .contain .main-content .title .button-wrap { display: flex; flex-direction: row; align-items: center; gap: 10px; } 
+.mypage .myinfo .contain .main-content .title .button-wrap button { display: flex; height: 35px; flex-direction: row; align-items: center; justify-content: center; gap: 5px; padding: 0 30px; border-radius: 5px; font-size: 14px; letter-spacing: -0.75px; color: #ffffff; line-height: 1; font-weight: 500; } 
+.mypage .myinfo .contain .main-content .title .button-wrap .delete-btn .icon { width: 16px; height: 16px; background-color: #ffffff; border-radius: 2px; display: flex; flex-direction: row; align-items: center; justify-content: center; } 
+.mypage .myinfo .contain .main-content .title .button-wrap .delete-btn .icon i { color: #f3544b; font-size: 16px; transition: all 0.3s; } 
+.mypage .myinfo .contain .main-content .title .button-wrap .delete-btn:disabled .icon i { color: #c9caca; } 
+.mypage .myinfo .contain .main-content .title .button-wrap .delete-btn { background-color: #f3544b; } 
+.mypage .myinfo .contain .main-content .title .button-wrap .delete-btn:disabled { background-color: #dadada; } 
+
+/* 마이페이지 - 사이드바 */
+.myinfo .side-navi .side-navi-bar { display: flex; flex-direction: column; align-items: flex-start; width: 210px; gap: 70px; } 
+.myinfo .side-navi .side-navi-bar .title h3 { font-size: 24px; line-height: 1; color: #333; font-weight: 700; letter-spacing: -0.75px; } 
+.myinfo .side-navi .side-navi-bar .navi-bar-inner { width: 100%; } 
+.myinfo .side-navi .navi-list { display: flex; flex-direction: column; align-items: flex-start; gap: 70px; } 
+.myinfo .side-navi .navi-list .depth1 { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; } 
+.myinfo .side-navi .navi-list .depth1 .navi-item { display: flex; flex-direction: row; align-items: center; gap: 10px; } 
+.myinfo .side-navi .navi-list .depth1 .navi-item img { width: 30px; height: 30px; object-fit: contain; } 
+.myinfo .side-navi .navi-list .depth1 .navi-item span { font-size: 20px; line-height: 1; font-weight: 700; color: #333; letter-spacing: -0.75px; } 
+.myinfo .side-navi .depth2-list { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; } 
+.myinfo .side-navi .depth2-list .depth2 .navi-item { font-size: 16px; line-height: 1; font-weight: 500; color: #333; letter-spacing: -0.75px; transition: all 0.36s; } 
+.myinfo .side-navi .depth2-list .depth2 .navi-item:hover { color: #23b16c; } 
+.myinfo .side-navi .depth2-list .depth2 .navi-item.act { color: #23b16c; font-weight: 600; } 
+
+/* 결제수단관리 */
+.myinfo .payment-content .card-list { width: 100%;height: 100%; display: flex; flex-direction: column; align-items: center; } 
+.myinfo .payment-content .card-list .card-header { width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; padding: 0 20px; gap: 12px; padding-bottom: 15px; border-bottom: 1px solid #dadada; } 
+.myinfo .payment-content .card-list .card-header .tit { font-size: 24px; font-weight: 600; color: #000; line-height: 1; letter-spacing: -0.75px; } 
+.myinfo .payment-content .card-list .card-header .number { font-size: 24px; font-weight: 500; color: #888; line-height: 1; letter-spacing: -0.75px; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 12px; } 
+.myinfo .payment-content .card-list .card-header .tit + .number::before { content: ""; display: block; width: 1px; height: 24px; background-color: #dadada; } 
+
+.myinfo .payment-content .card-list .card-wrap { width: 100%;height: fit-content; padding: 20px; transition: all 0.3s; } 
+.myinfo .payment-content .card-list .card-wrap .cards { width: 100%; display: flex; flex-wrap: wrap; gap: 20px; transition: all 0.3s; } 
+.myinfo .payment-content .card-list .cards .card-item { width: calc(50% - 10px); display: flex; gap: 10px; border: 1px solid #eee; border-radius: 10px; position: relative; transition: all 0.3s; } 
+.myinfo .payment-content .card-list .cards .card-item .item-wrap { min-width: 0; width: 100%; padding: 20px 30px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 10px; position: relative; } 
+.myinfo .payment-content .card-list .cards .card-item .card-info { width: calc(100% - 110px); display: flex; flex-direction: row; align-items: center; gap: 15px; } 
+.myinfo .payment-content .card-list .cards .card-item .card-info .card-thumb { min-width: 85px; height: 55px; border-radius: 5px; overflow: hidden; transition: all 0.3s; } 
+.myinfo .payment-content .card-list .cards .card-item .card-info .card-thumb img { width: 100%; height: 100%; object-fit: contain; } 
+.myinfo .payment-content .card-list .cards .card-item .card-info .card-text { width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 7px; max-width: 209px; min-width: 0; transition: all 0.3s; } 
+.myinfo .payment-content .card-list .cards .card-item .card-info .card-text .card-bank { display: flex; align-items: center; gap: 6px; min-width: 0; max-width:100%; transition: all 0.3s; } 
+.myinfo .payment-content .card-list .cards .card-item .card-info .card-text .card-bank p { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } 
+.card-bank:not(:has(.primary-badge)) p { max-width: 100%; } 
+.card-bank.no-badge p { max-width: 100%; } 
+.myinfo .payment-content .card-list .cards .card-item .card-info .card-text .card-bank .primary-badge { flex-shrink: 0; padding: 3px 8px; border-radius: 100px; background: #eefbf1; font-size: 13px; font-weight: 500; color: #23b16c; letter-spacing: -0.75px; line-height: 1; } 
+.myinfo .payment-content .card-list .cards .card-item .card-info .card-text .card-number { font-size: 16px; color: #888; line-height: 1; font-weight: 400; max-width: 100%; min-width: 0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } 
+.myinfo .payment-content .card-list .cards .card-item .card-actions { min-width: 110px; display: flex; flex-direction: row; align-items: center; gap: 5px; transition: all 0.3s; } 
+.myinfo .payment-content .card-list .cards .card-item .card-actions button { width: 100%; height: 30px; display: flex; flex-direction: row; align-items: center; justify-content: center; border-radius: 4px; border: 1px solid #eee; background: #fff; font-size: 14px; font-weight: 400; line-height: 1; letter-spacing: -0.75px; } 
+.myinfo .payment-content .card-list .cards .card-item .card-actions .edit-btn { color: #888888; } 
+.myinfo .payment-content .card-list .cards .card-item .card-actions .delete-btn { color: #ff3b30; } 
+
+.myinfo .payment-content .card-item input[type="checkbox"] { display: none; } 
+.myinfo .payment-content .checkmark { position: absolute; top: 8px; left: 8px; width: 16px; height: 16px; background-color: #555555; border-radius: 2px; flex-direction: row; align-items: center; justify-content: center; display: none; transition: all 0.3s; } 
+.myinfo .payment-content .checkmark i { color: #ffffff; } 
+.myinfo .payment-content .card-item input[type="checkbox"]:checked + .checkmark { display: flex; } 
+.myinfo .payment-content .card-item:has(input[type="checkbox"]:checked),
+.myinfo .payment-content .card-item.selected { border: 2px solid #555555; } 
+
+.myinfo .payment-content .card-list .add-btn { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 5px; width: 350px; height: 55px; border-radius: 5px; background-color: #f1faf7; border: 1px solid #23b16c; margin-top: 70px; transition: all 0.3s; } 
+.myinfo .payment-content .card-list .add-btn .icon { width: 20px; height: 20px; border-radius: 100%; background-color: #23b16c; display: flex; flex-direction: row; align-items: center; justify-content: center; } 
+.myinfo .payment-content .card-list .add-btn .icon i { color: #ffffff; font-size: 18px; line-height: 1; } 
+.myinfo .payment-content .card-list .add-btn p { color: #23b16c; font-size: 16px; font-weight: 700; letter-spacing: -0.75px; line-height: 1; } 
+.more-wrap { position: relative; display: none; } 
+.more-wrap .menu-btn { color: #888888; } 
+.more-wrap .floating-menu { position: absolute; right: 0; bottom: -70px; background: #fff; border: 1px solid #eeeeee; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); z-index: 10; display: none; flex-direction: column; align-items: flex-start; transition: all 0.3s; } 
+.more-wrap .floating-menu button { width: 130px; height: 37px; display: flex; flex-direction: row; align-items: center; justify-content: flex-start; padding: 10px 15px; font-size: 14px; letter-spacing: -0.75px; line-height: 1; color: #7d7d7d; font-weight: 400; } 
+.more-wrap .floating-menu button + .button { border-top: 1px solid; } 
+.more-wrap .floating-menu .edit-btn { color: #888888; } 
+.more-wrap .floating-menu .delete-btn { color: #ff3b30; } 
+.more-wrap .floating-menu.active { display: flex; }
+
+
+
+@media only screen and (max-width: 1200px){
+ .mypage .myinfo { padding: 40px 10px; } 
+ .side-navi { display: none; } 
+ }
+@media only screen and (max-width: 900px){
+ .myinfo .payment-content .card-list .cards .card-item { width: 100%; } 
+.myinfo .payment-content .card-list .cards .card-item .card-info .card-text { max-width: 550px; } 
+ }
+
+/* ----- 화면사이즈 (모바일화면) -----*/
+/* ----- 최대 720px -----*/
+@media only screen and (max-width: 720px){
+  .mypage{height: calc(100vh - 54px);}
+    .mypage .myinfo .wraper{height: 100%;}
+ .mypage .logout { display: flex; display: flex; align-items: center; justify-content: center; font-size: 14px; letter-spacing: -0.75px; color: #888; line-height: 1; text-decoration: underline; letter-spacing: -0.5px; text-underline-offset: 3px; text-decoration-thickness: 1px; margin-bottom: 100px; } 
+.mypage .mypage-list .list ul .sub-list .panel .items-wrap { display: grid; grid-template-columns: repeat(2, 1fr); } 
+.mypage .myinfo { padding: 0px 10px; height: 100%;} 
+.mypage .myinfo .contain .main-content .title { display: none; } 
+.myinfo .payment-content .card-list{justify-content: space-between;}
+.myinfo .payment-content .card-list .card-wrap { padding: 0; } 
+.myinfo .payment-content .card-list .card-wrap .cards { gap: 0; } 
+.myinfo .payment-content .card-list .card-header { display: none; } 
+.myinfo .payment-content .card-list .cards .card-item { border: none; } 
+.myinfo .payment-content .card-list .cards .card-item .item-wrap { padding: 20px; } 
+.myinfo .payment-content .card-list .cards .card-item .card-actions { display: none; } 
+.myinfo .payment-content .card-list .cards .card-item .card-info .card-thumb { min-width: 45px; height: 30px; transform: rotate(90deg); } 
+.more-wrap { display: flex; } 
+
+/* 모바일에서 체크박스 비활성화 */
+.myinfo .payment-content .card-item input[type="checkbox"] { pointer-events: none; opacity: 0; } 
+.myinfo .payment-content .checkmark { display: none !important; } 
+.myinfo .payment-content .card-item { cursor: default; } 
+.myinfo .payment-content .card-item:hover { border-color: #eee; } 
+.myinfo .payment-content .card-item:has(input[type="checkbox"]:checked),
+.myinfo .payment-content .card-item.selected { border:none } 
+ }
+
+/* ----- 화면사이즈 -----*/
+/* ----- 최대 450px -----*/
+@media only screen and (max-width: 450px){
+ .mypage .user .column .between { flex-direction: column; align-items: flex-start; gap: 20px; margin-bottom: 0; } 
+.mypage .user .column .between .name h2 { font-size: 20px; } 
+.mypage .user .column .between .name p { font-size: 16px; } 
+.mypage .user .column .between .buttons .round-btn p { text-align: left; font-size: 12px; } 
+ }
+/* ----- 화면사이즈 -----*/
+/* ----- 최대 375px -----*/
+@media only screen and (max-width: 375px) { } 
