@@ -1,0 +1,21 @@
+# PHP 파일 처리 설정
+AddType application/x-httpd-php .php
+
+# 기본 인덱스 파일 설정
+DirectoryIndex index.php index.html index.htm
+
+# PHP 파일 실행 허용
+<Files "*.php">
+    Require all granted
+</Files>
+
+# 디렉토리 인덱스 비활성화 (보안상)
+Options -Indexes
+
+# URL 리라이팅 설정
+RewriteEngine On
+
+# 기본 페이지로 리다이렉트
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ pages/web/main/index.php [L]
